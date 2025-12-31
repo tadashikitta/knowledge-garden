@@ -10,6 +10,7 @@
       background: #111;
       color: #eee;
     }
+
     h1 {
       padding: 16px;
       margin: 0;
@@ -17,12 +18,21 @@
       background: #1e1e1e;
       border-bottom: 1px solid #333;
     }
+
+    h2 {
+      margin: 0;
+      padding: 16px;
+      font-size: 16px;
+      border-top: 1px solid #333;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       gap: 12px;
       padding: 12px;
     }
+
     iframe {
       width: 100%;
       height: 500px;
@@ -30,28 +40,60 @@
       border-radius: 8px;
       background: #000;
     }
+
+    ul {
+      list-style: none;
+      padding: 0 24px 24px;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #8ab4f8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
 <h1>🌱 Knowledge Garden Dashboard</h1>
 
+<!-- 埋め込み用エリア（必要に応じて有効化） -->
 <div class="grid">
-  <!-- Airtable (embed 가능한 View のみ) -->
+  <!-- Airtable（embed可能なViewのみ使用） -->
   <!-- 例: https://airtable.com/embed/appXXXX/tblYYYY -->
   <!-- <iframe src="https://airtable.com/embed/XXXXXXXX"></iframe> -->
+
+  <!-- Mapify（埋め込み不可の場合あり） -->
+  <!-- <iframe src="https://mapify.so/ja/app/all"></iframe> -->
+
+  <!-- Notion（公開共有URLを使用） -->
+  <!-- <iframe src="https://www.notion.so/XXXXXXXX"></iframe> -->
 </div>
 
-<h2 style="padding:16px;">🔗 External Tools</h2>
-<ul style="padding:0 24px;">
+<h2>🔗 External Tools</h2>
+<ul>
   <li>
-    <a href="https://airtable.com" target="_blank">Airtable</a>
+    <a href="https://airtable.com" target="_blank" rel="noopener noreferrer">
+      Airtable
+    </a>
   </li>
   <li>
-    <a href="https://mapify.so/ja/app/all" target="_blank">Mapify</a>
+    <a href="https://mapify.so/ja/app/all" target="_blank" rel="noopener noreferrer">
+      Mapify
+    </a>
   </li>
   <li>
-    <a href="https://www.notion.so" target="_blank">Notion</a>
+    <a href="https://www.notion.so" target="_blank" rel="noopener noreferrer">
+      Notion
+    </a>
   </li>
 </ul>
 
